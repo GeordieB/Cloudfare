@@ -1,0 +1,10 @@
+{
+  "homePage": {
+    "title": "Bienvenue a Sterling's Home Page",
+    "changeLanguage": "En"
+  },
+  "mission": {
+    "title": "Notre mission",
+    "description": "something in French lol."
+  }
+}
