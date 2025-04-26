@@ -18,8 +18,12 @@ function changeLanguage() {
 <template>
   <div class="navbar">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/mission">Mission</router-link>
+      <router-link to="/">
+        Home
+      </router-link> |
+      <router-link to="/mission">
+        Mission
+      </router-link>
     </nav>
   </div>
   <div class="navbar">
