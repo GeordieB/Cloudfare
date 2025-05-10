@@ -20,12 +20,12 @@ function changeLanguage() {
     <img
       class="navbar-stripes justify-start"
       src="./assets/navbar-stripes.png"
-      alt="Vue logo"
+      alt="stripes logo"
     />
     <nav class="justify-end">
       <a
         class="white-text pr-2"
-        href="#hello-world-block"
+        href="#home"
       >
         <v-icon
           size="18"

@@ -2,7 +2,6 @@
   <div class="card">
     <a
       class="center"
-      href="https://vuejs.org/"
       target="_blank"
     >
       <img

@@ -5,7 +5,7 @@ import Mission from '../components/Mission.vue';
 
 <template>
   <v-spacer style="padding-bottom: 100px" />
-  <hello-world id="hello-world-block" />
+  <hello-world id="home" />
   <v-spacer />
   <mission id="mission-block" />
 </template>
