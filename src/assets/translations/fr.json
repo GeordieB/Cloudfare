@@ -1,0 +1,23 @@
+{
+  "app": {
+    "navbarLinks": {
+      "mission": "mission",
+      "design": "design",
+      "resources": "resources",
+      "downloads": "downloads"
+    }
+  },
+  "homePage": {
+    "changeLanguage": "En"
+  },
+  "mission": {
+    "whatSection": {
+      "title": "What is body equality?",
+      "description": "The movement goes by many names: body/size equality, body diversity/inclusivity, fat acceptance/equality/liberation, etc. No matter how you label it, it is an important social issue that is often overlooked, poorly understood, or flat out vilified. It is the radical notion that people of all body shapes and sizes deserve love, respect, and equal treatment. Prevailing attitudes view fatness as a personal and moral failure. Our bodies are pathologized for simply daring to exist. Right now there are precious few laws that afford protection against size discrimination - a major factor that contributes to financial inequality, denies essential medical treatments, and creates serious mental health challenges for those living in larger bodies."
+    },
+    "flagSection": {
+      "title": "The Fat Flag",
+      "description": "The fight for body equality is compounded by a plethora of systemic issues and often intersects with other marginalized groups  - groups who are suffering increasing injustice and discrimination in our current tumultuous political landscape. It is vital that we band together to push back against these systems of oppression. To that end, many communities have established flags, colors, and symbols that help spread awareness and identify safe spaces. However, we do not. Until now. With these goals in mind, I have designed the fat acceptance flag as a banner of joy, solidarity, and resistance."
+    }
+  }
+}

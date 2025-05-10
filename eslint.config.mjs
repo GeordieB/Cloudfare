@@ -2,11 +2,25 @@ import pluginVue from 'eslint-plugin-vue';
 import vueToEslintConfig from '@vue/eslint-config-typescript';
 import js from '@eslint/js';
 
+import prettier from 'eslint-config-prettier';
+import pluginPrettier from 'eslint-plugin-prettier/recommended';
+
 export default [
   ...pluginVue.configs['flat/recommended'],
   ...vueToEslintConfig(),
   js.configs.recommended,
-
+  pluginPrettier,
+  prettier,
+  {
+    rules: {
+      'prettier/prettier': [
+        'error',
+        {
+          singleAttributePerLine: true,
+        },
+      ],
+    },
+  },
   { ignores: ['**/dist'] },
   {
     rules: {

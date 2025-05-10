@@ -1,9 +1,9 @@
-import { createI18n } from "vue-i18n";
-import en from "../assets/en.json";
-import fr from "../assets/fr.json";
+import { createI18n } from 'vue-i18n';
+import en from '../assets/translations/en.json';
+import fr from '../assets/translations/fr.json';
 
 const i18n = createI18n({
-  locale: "en",
+  locale: 'en',
   messages: {
     en: en,
     fr: fr,
