@@ -20,6 +20,7 @@
 <style scoped>
 h1 {
   font-size: 40px;
+  transform: skewX(-10deg);
 }
 
 .mission-div {

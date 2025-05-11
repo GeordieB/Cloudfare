@@ -1,4 +1,6 @@
 <template>
+  <p class="center dare-block">{{ $t('homePage.dare') }}</p>
+  <p class="center dare-block">{{ $t('homePage.takeUpSpace') }}</p>
   <div class="card">
     <a
       class="center"
@@ -17,5 +19,12 @@
 .flag {
   width: 50%;
   height: auto;
+}
+
+.dare-block {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  transform: skewX(-10deg);
 }
 </style>

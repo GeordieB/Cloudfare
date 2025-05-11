@@ -8,7 +8,9 @@
     }
   },
   "homePage": {
-    "changeLanguage": "Fr"
+    "changeLanguage": "Fr",
+    "dare": "Dare to",
+    "takeUpSpace": "TAKE UP SPACE"
   },
   "mission": {
     "whatSection": {

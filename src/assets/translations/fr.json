@@ -8,7 +8,9 @@
     }
   },
   "homePage": {
-    "changeLanguage": "En"
+    "changeLanguage": "En",
+    "dare": "Osez",
+    "takeUpSpace": "PRENDRE DE L'ESPACE"
   },
   "mission": {
     "whatSection": {
