@@ -1,6 +1,25 @@
 <template>
-  <p class="center dare-block">{{ $t('homePage.dare') }}</p>
-  <p class="center take-up-space-block">{{ $t('homePage.takeUpSpace') }}</p>
+  <v-row
+    id="home"
+    no-gutters
+    class="center"
+  >
+    <p class="dare-block">{{ $t('homePage.dare') }}</p></v-row
+  >
+  <v-row
+    no-gutters
+    class="center"
+  >
+    <v-col
+      sm="6"
+      lg="12"
+    >
+      <p class="take-up-space-block">
+        {{ $t('homePage.takeUpSpace') }}
+      </p></v-col
+    ></v-row
+  >
+
   <div class="card">
     <a
       class="center"
@@ -34,5 +53,6 @@
   font-weight: 300;
   transform: skewX(-10deg);
   text-shadow: 5px 5px 5px #0550cf;
+  text-align: center;
 }
 </style>

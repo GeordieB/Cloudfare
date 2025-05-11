@@ -5,9 +5,10 @@ import Mission from '../components/Mission.vue';
 
 <template>
   <v-spacer style="padding-bottom: 100px" />
-  <hello-world id="home" />
+  <hello-world />
   <v-spacer />
   <mission id="mission-block" />
+  <v-spacer />
 </template>
 
 <style scoped>
