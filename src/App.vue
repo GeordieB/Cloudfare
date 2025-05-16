@@ -32,10 +32,7 @@ function changeLanguage() {
 </script>
 
 <template>
-  <div
-    class="navbar"
-    :style="{ height: useFullMenu ? '36px' : '20px' }"
-  >
+  <div class="navbar">
     <v-row no-gutters>
       <v-col class="d-flex">
         <img
@@ -98,7 +95,7 @@ function changeLanguage() {
       <v-col
         v-else
         class="d-flex justify-end"
-        ><more-menu /> </v-col
+        ><more-menu @change-language="changeLanguage" /> </v-col
     ></v-row>
   </div>
   <router-view />

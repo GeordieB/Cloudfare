@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const emit = defineEmits<{ changeLanguage: [] }>();
+</script>
+
 <template>
-  <v-menu>
+  <v-menu class="pr-0">
     <template #activator="{ props }">
       <v-btn
         variant="plain"
@@ -64,4 +68,13 @@
       </v-list-item>
     </v-list></v-menu
   >
+  <v-btn
+    variant="plain"
+    color="#FFF"
+    :ripple="false"
+    class="pl-0"
+    @click="emit('changeLanguage')"
+  >
+    {{ $t('homePage.changeLanguage') }}
+  </v-btn>
 </template>
