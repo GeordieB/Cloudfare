@@ -78,13 +78,4 @@ const emit = defineEmits<{ changeLanguage: [] }>();
       </v-list-item>
     </v-list></v-menu
   >
-  <v-btn
-    variant="plain"
-    color="#FFF"
-    :ripple="false"
-    class="pl-0"
-    @click="emit('changeLanguage')"
-  >
-    {{ $t('homePage.changeLanguage') }}
-  </v-btn>
 </template>
