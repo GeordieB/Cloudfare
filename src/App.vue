@@ -1,8 +1,24 @@
 <script setup lang="ts">
 import i18n from './plugins/i18n.ts';
-import { ref } from 'vue';
+import { useDisplay } from 'vuetify';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+import MoreMenu from './components/MoreMenu.vue';
 
 const currentLanguage = ref('en');
+
+const display = useDisplay();
+const useFullMenu = ref(false);
+onMounted(async () => {
+  window.addEventListener('resize', () => handleResize());
+  handleResize();
+});
+
+onBeforeUnmount(async () => {
+  window.removeEventListener('resize', () => handleResize());
+});
+function handleResize() {
+  useFullMenu.value = !display.smAndDown.value;
+}
 
 function changeLanguage() {
   if (currentLanguage.value === 'en') {
@@ -16,7 +32,10 @@ function changeLanguage() {
 </script>
 
 <template>
-  <div class="navbar">
+  <div
+    class="navbar"
+    :style="{ height: useFullMenu ? '36px' : '20px' }"
+  >
     <v-row no-gutters>
       <v-col class="d-flex">
         <img
@@ -24,7 +43,10 @@ function changeLanguage() {
           src="./assets/navbar-stripes.png"
           alt="stripes logo"
       /></v-col>
-      <v-col class="d-flex justify-end">
+      <v-col
+        v-if="useFullMenu"
+        class="d-flex justify-end"
+      >
         <nav>
           <a
             class="white-text pr-2"
@@ -72,22 +94,26 @@ function changeLanguage() {
             {{ $t('homePage.changeLanguage') }}
           </v-btn>
         </nav></v-col
-      ></v-row
-    >
+      >
+      <v-col
+        v-else
+        class="d-flex justify-end"
+        ><more-menu /> </v-col
+    ></v-row>
   </div>
   <router-view />
 </template>
 
 <style>
 #app {
-  display: block;
+  display: inline-grid;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 }
 .navbar {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.65);

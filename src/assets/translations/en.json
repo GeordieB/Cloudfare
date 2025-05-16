@@ -1,6 +1,7 @@
 {
   "app": {
     "navbarLinks": {
+      "home": "home",
       "mission": "mission",
       "design": "design",
       "resources": "resources",

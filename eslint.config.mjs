@@ -23,6 +23,11 @@ export default [
   },
   { ignores: ['**/dist'] },
   {
+    languageOptions: {
+      globals: { window: true, document: true, navigator: true, console: true },
+    },
+  },
+  {
     rules: {
       'func-style': ['error', 'declaration'],
       'no-console': 'warn',

@@ -49,8 +49,8 @@
 
 .take-up-space-block {
   color: white;
-  font-size: 150px;
-  font-weight: 300;
+  font-size: 60px;
+  font-weight: 400;
   transform: skewX(-10deg);
   text-shadow: 5px 5px 5px #0550cf;
   text-align: center;
