@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import { useDisplay } from 'vuetify/framework';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+
+const display = useDisplay();
+const useFullImg = ref(false);
+onMounted(async () => {
+  window.addEventListener('resize', () => handleResize());
+  handleResize();
+});
+
+onBeforeUnmount(async () => {
+  window.removeEventListener('resize', () => handleResize());
+});
+function handleResize() {
+  useFullImg.value = !display.smAndDown.value;
+}
+</script>
+
 <template>
   <v-row
     id="home"
@@ -27,6 +46,7 @@
     >
       <img
         class="flag"
+        :width="useFullImg ? '50%' : '80%'"
         src="../assets/flag.png"
         alt="Fat Flag"
       />
@@ -36,7 +56,6 @@
 
 <style scoped>
 .flag {
-  width: 50%;
   height: auto;
 }
 
