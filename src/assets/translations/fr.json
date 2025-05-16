@@ -11,7 +11,9 @@
   "homePage": {
     "changeLanguage": "En",
     "dare": "Osez",
-    "takeUpSpace": "PRENDRE DE L'ESPACE"
+    "takeUpSpaceFull": "PRENDRE DE L'ESPACE",
+    "takeUpSpacePart1": "PRENDRE",
+    "takeUpSpacePart2": "DE L'ESPACE"
   },
   "mission": {
     "whatSection": {

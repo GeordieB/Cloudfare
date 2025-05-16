@@ -66,6 +66,16 @@ const emit = defineEmits<{ changeLanguage: [] }>();
           </a></v-list-item-title
         >
       </v-list-item>
+      <v-list-item>
+        <v-list-item-title class="text-white"
+          ><a
+            class="text-white"
+            @click="emit('changeLanguage')"
+          >
+            {{ $t('homePage.changeLanguage') }}
+          </a></v-list-item-title
+        >
+      </v-list-item>
     </v-list></v-menu
   >
   <v-btn

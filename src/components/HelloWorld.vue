@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify/framework';
 import { onBeforeUnmount, onMounted, ref } from 'vue';
+import i18n from '../plugins/i18n.ts';
 
 const display = useDisplay();
 const useFullImg = ref(false);
@@ -15,6 +16,15 @@ onBeforeUnmount(async () => {
 function handleResize() {
   useFullImg.value = !display.smAndDown.value;
 }
+
+function getText() {
+  if (i18n.global.locale === 'en') {
+    return 'homePage.takeUpSpace';
+  }
+  return useFullImg.value
+    ? 'homePage.takeUpSpaceFull'
+    : 'homePage.takeUpSpacePart1';
+}
 </script>
 
 <template>
@@ -23,19 +33,38 @@ function handleResize() {
     no-gutters
     class="center"
   >
-    <p class="dare-block">{{ $t('homePage.dare') }}</p></v-row
+    <p
+      class="dare-block"
+      :style="{ 'font-size': useFullImg ? '40px' : '30px' }"
+    >
+      {{ $t('homePage.dare') }}
+    </p></v-row
   >
   <v-row
     no-gutters
     class="center"
   >
-    <v-col
-      sm="6"
-      lg="12"
-    >
-      <p class="take-up-space-block">
-        {{ $t('homePage.takeUpSpace') }}
-      </p></v-col
+    <v-col class="d-flex justify-center">
+      <span
+        class="take-up-space-block text-pre-wrap"
+        :style="{ 'font-size': useFullImg ? '60px' : '40px' }"
+      >
+        {{ $t(getText()) }}
+      </span></v-col
+    ></v-row
+  >
+  <v-row
+    v-if="i18n.global.locale === 'fr' && !useFullImg"
+    no-gutters
+    class="center"
+  >
+    <v-col class="d-flex justify-center"
+      ><span
+        class="take-up-space-block text-pre-wrap"
+        :style="{ 'font-size': useFullImg ? '60px' : '40px' }"
+      >
+        {{ $t('homePage.takeUpSpacePart2') }}
+      </span></v-col
     ></v-row
   >
 
@@ -61,17 +90,16 @@ function handleResize() {
 
 .dare-block {
   color: white;
-  font-size: 40px;
   font-weight: 300;
   transform: skewX(-10deg);
 }
 
 .take-up-space-block {
   color: white;
-  font-size: 60px;
   font-weight: 400;
-  transform: skewX(-10deg);
+  font-style: normal; /* Ensure no default italic is applied */
+  transform: skewX(-10deg); /* Adjust the skew angle as needed */
+  display: inline-flex;
   text-shadow: 5px 5px 5px #0550cf;
-  text-align: center;
 }
 </style>
