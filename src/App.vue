@@ -36,6 +36,7 @@ function changeLanguage() {
     <v-row no-gutters>
       <v-col class="d-flex">
         <img
+          :width="useFullMenu ? '' : '300px'"
           class="navbar-stripes justify-start"
           src="./assets/navbar-stripes.png"
           alt="stripes logo"
