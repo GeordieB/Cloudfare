@@ -3,7 +3,7 @@ import en from '../assets/translations/en.json';
 import fr from '../assets/translations/fr.json';
 
 const i18n = createI18n({
-  locale: 'en',
+  locale: navigator.language.split('-')[0] || 'en',
   messages: {
     en: en,
     fr: fr,
