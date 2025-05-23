@@ -18,8 +18,8 @@
       {{ $t('mission.flagSection.secondParagraphBeforeLink') }}
       <a href="https://www.instagram.com/sterling_azure/">{{
         $t('mission.flagSection.linkText')
-      }}</a>
-      {{ $t('mission.flagSection.secondParagraphAfterLink') }}
+      }}</a
+      >{{ $t('mission.flagSection.secondParagraphAfterLink') }}
     </p>
   </div>
 </template>
