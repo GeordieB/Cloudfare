@@ -25,5 +25,29 @@
       "linkText": "attribute its design to me",
       "secondParagraphAfterLink": ".) If you’ve read this far, I highly encourage you to spread the flag and its meaning to any and all, and to use it well with radical pride and joy."
     }
+  },
+  "design": {
+    "title": "Design",
+    "description": "The design of the flag draws from several symbolic elements:",
+    "firstBulletPoint": "The use of stripes pays homage to the frequent motif of stripes in many pride flags across various identities within the queer community. The direction of these stripes also mirrors that of the disability pride flag, whose strips fall diagonally from left to right. Our stripes symbolize how the fat equality movement stands in parallel with other movements for social justice.",
+    "secondBulletPointBeforeLink": "The colors of the stripes were inspired by the logo for",
+    "secondBulletPointLinkText": "NAAFA’s Campaign for Size Freedom.",
+    "secondBulletPointAfterLink": "Though my design has no association with theirs, as I see it, the individual colors represent the following:",
+    "yellowTitle": "YELLOW",
+    "yellowDescription": "- unapologetic fat joy",
+    "whiteTitle": "WHITE",
+    "whiteDescription": "- unity and harmony between people of all sizes",
+    "coralTitle": "CORAL",
+    "coralDescription": "- warmth, acceptance, and inclusivity",
+    "blueTitle": "BLUE",
+    "blueDescription": "- liberation and determination",
+    "brownTitle": "BROWN",
+    "brownDescriptionBeforeLink": "- acknowledgement of the",
+    "brownDescriptionLinkText": "racist origins of anti-fatness",
+    "brownDescriptionAfterLink": "and the disproportionate efforts of Black women to combat it.",
+    "thirdBulletPointBeforeBold": "The starry navy blue background represents our right to",
+    "thirdBulletPointBold": "take up space",
+    "thirdBulletPointAfterBold": "by not diminishing ourselves or limiting our dreams for the sake of societal approval.",
+    "fourthBulletPoint": "Each of the three white stars on opposing ends of the flag is a different size, symbolizing the fact that bodies of all shapes and sizes are equally worthy of love and respect and should be allowed to coexist and thrive in harmony with one another."
   }
 }
