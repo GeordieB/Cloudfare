@@ -8,6 +8,7 @@ const currentLanguage = ref('en');
 
 const display = useDisplay();
 const useFullMenu = ref(false);
+const justifyNavStart = ref(false);
 onMounted(async () => {
   window.addEventListener('resize', () => handleResize());
   handleResize();
@@ -18,6 +19,7 @@ onBeforeUnmount(async () => {
 });
 function handleResize() {
   useFullMenu.value = !display.smAndDown.value;
+  justifyNavStart.value = display.xs.value;
 }
 
 function changeLanguage() {
@@ -95,7 +97,8 @@ function changeLanguage() {
       >
       <v-col
         v-else
-        class="d-flex justify-end"
+        class="d-flex"
+        :class="justifyNavStart ? 'justify-center' : 'justify-end'"
         ><more-menu @change-language="changeLanguage" /> </v-col
     ></v-row>
   </div>
