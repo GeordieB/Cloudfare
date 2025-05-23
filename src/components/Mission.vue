@@ -12,7 +12,14 @@
     </h1>
     <v-spacer class="py-2" />
     <p class="description mx-16 pb-8">
-      {{ $t('mission.flagSection.description') }}
+      {{ $t('mission.flagSection.firstParagraph') }}
+    </p>
+    <p class="description mx-16 pb-8">
+      {{ $t('mission.flagSection.secondParagraphBeforeLink') }}
+      <a href="https://www.instagram.com/sterling_azure/">{{
+        $t('mission.flagSection.linkText')
+      }}</a>
+      {{ $t('mission.flagSection.secondParagraphAfterLink') }}
     </p>
   </div>
 </template>
@@ -31,5 +38,9 @@ h1 {
 .description {
   font-size: 16px;
   font-weight: 300;
+}
+
+a {
+  color: #0550cf;
 }
 </style>

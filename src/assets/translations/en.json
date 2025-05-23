@@ -20,7 +20,10 @@
     },
     "flagSection": {
       "title": "The Fat Flag",
-      "description": "The fight for body equality is compounded by a plethora of systemic issues and often intersects with other marginalized groups  - groups who are suffering increasing injustice and discrimination in our current tumultuous political landscape. It is vital that we band together to push back against these systems of oppression. To that end, many communities have established flags, colors, and symbols that help spread awareness and identify safe spaces. However, we do not. Until now. With these goals in mind, I have designed the fat acceptance flag as a banner of joy, solidarity, and resistance."
+      "firstParagraph": "The fight for body equality is compounded by a plethora of systemic issues and often intersects with other marginalized groups  - groups who are suffering increasing injustice and discrimination in our current tumultuous political landscape. It is vital that we band together to push back against these systems of oppression. To that end, many communities have established flags, colors, and symbols that help spread awareness and identify safe spaces. However, we do not. Until now. With these goals in mind, I have designed the fat acceptance flag as a banner of joy, solidarity, and resistance.",
+      "secondParagraphBeforeLink": "My sincerest hope is for this flag to become the universal symbol of fat acceptance and amplify the voices of those already fighting on our behalf. I am distributing it freely with no copyright claim whatsoever. (However, where it makes sense, it would be appreciated to",
+      "linkText": "attribute its design to me",
+      "secondParagraphAfterLink": ".) If you’ve read this far, I highly encourage you to spread the flag and its meaning to any and all, and to use it well with radical pride and joy."
     }
   }
 }
