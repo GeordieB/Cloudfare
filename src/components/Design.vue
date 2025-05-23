@@ -1,9 +1,5 @@
 <template>
   <div class="design-div px-8 pt-8">
-    <!--    Center between paragraphs like "Take up space"-->
-    <!--    <h1 class="pt-8 ml-16 font-weight-regular">-->
-    <!--      {{ $t('design.title') }}-->
-    <!--    </h1>-->
     <p class="description mx-16">
       {{ $t('design.description') }}
     </p>
