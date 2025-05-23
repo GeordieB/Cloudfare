@@ -97,8 +97,7 @@ function changeLanguage() {
       >
       <v-col
         v-else
-        class="d-flex"
-        :class="justifyNavStart ? 'justify-center' : 'justify-end'"
+        class="d-flex justify-end"
         ><more-menu @change-language="changeLanguage" /> </v-col
     ></v-row>
   </div>
