@@ -11,7 +11,7 @@
       {{ $t('mission.flagSection.title') }}
     </h1>
     <v-spacer class="py-2" />
-    <p class="description mx-16 pb-8">
+    <p class="description mx-16 pb-4">
       {{ $t('mission.flagSection.firstParagraph') }}
     </p>
     <p class="description mx-16 pb-8">
