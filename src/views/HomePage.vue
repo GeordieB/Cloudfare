@@ -25,6 +25,7 @@ function handleResize() {
   <hello-world />
   <v-spacer />
   <mission id="mission-block" />
+  <v-spacer />
   <v-row
     no-gutters
     class="center"
