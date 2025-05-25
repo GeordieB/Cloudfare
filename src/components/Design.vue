@@ -14,9 +14,11 @@
         <li>
           <p class="description mr-16">
             {{ $t('design.secondBulletPointBeforeLink') }}
-            <a href="https://naafa.org/sizefreedom">{{
-              $t('design.secondBulletPointLinkText')
-            }}</a>
+            <a
+              href="https://naafa.org/sizefreedom"
+              target="_blank"
+              >{{ $t('design.secondBulletPointLinkText') }}</a
+            >
             {{ $t('design.secondBulletPointAfterLink') }}
           </p>
           <div class="mx-16 ml-16">
@@ -60,9 +62,11 @@
                     {{ $t('design.brownTitle') }}
                   </span>
                   {{ $t('design.brownDescriptionBeforeLink') }}
-                  <a href="https://www.npr.org/transcripts/893006538">{{
-                    $t('design.brownDescriptionLinkText')
-                  }}</a>
+                  <a
+                    href="https://www.npr.org/transcripts/893006538"
+                    target="_blank"
+                    >{{ $t('design.brownDescriptionLinkText') }}</a
+                  >
                   {{ $t('design.brownDescriptionAfterLink') }}
                 </span>
               </li>

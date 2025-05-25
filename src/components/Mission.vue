@@ -16,9 +16,10 @@
     </p>
     <p class="description mx-16 pb-8">
       {{ $t('mission.flagSection.secondParagraphBeforeLink') }}
-      <a href="https://www.instagram.com/sterling_azure/">{{
-        $t('mission.flagSection.linkText')
-      }}</a
+      <a
+        href="https://www.instagram.com/sterling_azure/"
+        target="_blank"
+        >{{ $t('mission.flagSection.linkText') }}</a
       >{{ $t('mission.flagSection.secondParagraphAfterLink') }}
     </p>
   </div>
