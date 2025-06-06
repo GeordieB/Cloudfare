@@ -11,45 +11,45 @@
   "homePage": {
     "changeLanguage": "En",
     "dare": "Osez",
-    "takeUpSpaceFull": "PRENDRE DE L'ESPACE",
-    "takeUpSpacePart1": "PRENDRE",
+    "takeUpSpaceFull": "OCCUPER DE L'ESPACE",
+    "takeUpSpacePart1": "OCCUPER",
     "takeUpSpacePart2": "DE L'ESPACE"
   },
   "mission": {
     "whatSection": {
-      "title": "What is body equality?",
-      "description": "The movement goes by many names: body/size equality, body diversity/inclusivity, fat acceptance/equality/liberation, etc. No matter how you label it, it is an important social issue that is often overlooked, poorly understood, or flat out vilified. It is the radical notion that people of all body shapes and sizes deserve love, respect, and equal treatment. Prevailing attitudes view fatness as a personal and moral failure. Our bodies are pathologized for simply daring to exist. Right now there are precious few laws that afford protection against size discrimination - a major factor that contributes to financial inequality, denies essential medical treatments, and creates serious mental health challenges for those living in larger bodies."
+      "title": "Qu'est-ce que l'égalité corporelle?",
+      "description": "Ce mouvement porte plusieurs noms : égalité corporelle, diversité corporelle, libération/acceptation des corps gros, lutte contre la grossophobie, etc. Peu importe comment on l'appelle, c'est un enjeu social important qui est souvent négligé, mal compris ou carrément vilipendé. Il s'agit de l'idée radicale selon laquelle les personnes de toutes morphologies méritent l'amour, le respect et l'égalité de traitement. Les mentalités dominantes notre société traitent la grosseur d’échec personnel et moral. Nos corps sont pathologisés simplement parce qu'ils osent exister. Actuellement, rares sont les lois qui protègent contre la discrimination liée à la taille, un facteur majeur qui contribue aux inégalités financières, prive les personnes de traitements médicaux essentiels et crée de graves problèmes de santé mentale pour les personnes grosses."
     },
     "flagSection": {
-      "title": "The Fat Flag",
-      "firstParagraph": "The fight for body equality is compounded by a plethora of systemic issues and often intersects with other marginalized groups  - groups who are suffering increasing injustice and discrimination in our current tumultuous political landscape. It is vital that we band together to push back against these systems of oppression. To that end, many communities have established flags, colors, and symbols that help spread awareness and identify safe spaces. However, we do not. Until now. With these goals in mind, I have designed the fat acceptance flag as a banner of joy, solidarity, and resistance.",
-      "secondParagraphBeforeLink": "My sincerest hope is for this flag to become the universal symbol of fat acceptance and amplify the voices of those already fighting on our behalf. I am distributing it freely with no copyright claim whatsoever. (However, where it makes sense, it would be appreciated to",
-      "linkText": "attribute its design to me",
-      "secondParagraphAfterLink": ".) If you’ve read this far, I highly encourage you to spread the flag and its meaning to any and all, and to use it well with radical pride and joy."
+      "title": "Le drapeau « fat »",
+      "firstParagraph": "La lutte pour l'égalité corporelle est aggravée par une multitude de problèmes systémiques et s’entrelace souvent à d'autres groupes marginalisés - groupes qui sont de plus en plus victimes d'injustices et de discriminations dans notre paysage politique tumultueux. Il est essentiel qu’on s'unit pour lutter contre tous ces systèmes d'oppression. À cette fin, de nombreuses communautés ont adopté des drapeaux, des couleurs et des symboles pour sensibiliser et identifier des espaces « safe » ou alliées. Cependant, nous n’en avons pas - jusqu'à maintenant. C’est dans cet esprit que j'ai conçu le drapeau de l’égalité corporelle comme bannière de joie, de solidarité et de résistance.",
+      "secondParagraphBeforeLink": "J'espère sincèrement que ce drapeau devienne le symbole universel de l'acceptation des personnes grosses et qu'il amplifie la voix de celleux qui luttent déjà en notre nom. Je le distribue gratuitement, sans aucune revendication de droit d'auteur. (Toutefois, si cela s'avère pertinent, je vous serais reconnaissant",
+      "linkText": "de m'en attribuer la création",
+      "secondParagraphAfterLink": ".) Si vous avez lu jusqu'ici, je vous encourage fortement à répandre ce drapeau et sa signification à tous.tes, et à l'utiliser avec fierté et joie."
     }
   },
   "design": {
     "title": "DESIGN",
-    "description": "The design of the flag draws from several symbolic elements:",
-    "firstBulletPoint": "The use of stripes pays homage to the frequent motif of stripes in many pride flags across various identities within the queer community. The direction of these stripes also mirrors that of the disability pride flag, whose strips fall diagonally from left to right. Our stripes symbolize how the fat equality movement stands in parallel with other movements for social justice.",
-    "secondBulletPointBeforeLink": "The colors of the stripes were inspired by the logo for",
-    "secondBulletPointLinkText": "NAAFA’s Campaign for Size Freedom.",
-    "secondBulletPointAfterLink": "Though my design has no association with theirs, as I see it, the individual colors represent the following:",
-    "yellowTitle": "YELLOW",
-    "yellowDescription": "- unapologetic fat joy",
-    "whiteTitle": "WHITE",
-    "whiteDescription": "- unity and harmony between people of all sizes",
+    "description": "Le design du drapeau s'inspire de plusieurs éléments symboliques :",
+    "firstBulletPoint": "L'utilisation de rayures rend hommage au motif fréquent des rayures sur de nombreux drapeaux de fierté qui représentant de diverses identités au sein de la communauté queer. L'orientation de ces rayures reprend également celle du drapeau de fierté handicap dont les bandes tombent en diagonale de gauche à droite. Nos rayures symbolisent la complémentarité du mouvement pour l'égalité des personnes grosses avec d'autres mouvements pour la justice sociale.",
+    "secondBulletPointBeforeLink": "Les couleurs des rayures s'inspirent du logo de la ",
+    "secondBulletPointLinkText": "Campaign for Size Freedom de la NAAFA.",
+    "secondBulletPointAfterLink": "Bien que mon design n'ait aucun lien avec le leur, à mon avis, les couleurs individuelles représentent:",
+    "yellowTitle": "JAUNE",
+    "yellowDescription": "- joie radicale et assumée des personnes grosses",
+    "whiteTitle": "BLANC",
+    "whiteDescription": "- unité et harmonie entre les personnes de toutes tailles et morphologies",
     "coralTitle": "CORAL",
-    "coralDescription": "- warmth, acceptance, and inclusivity",
-    "blueTitle": "BLUE",
-    "blueDescription": "- liberation and determination",
-    "brownTitle": "BROWN",
-    "brownDescriptionBeforeLink": "- acknowledgement of the",
-    "brownDescriptionLinkText": "racist origins of anti-fatness",
-    "brownDescriptionAfterLink": "and the disproportionate efforts of Black women to combat it.",
-    "thirdBulletPointBeforeBold": "The starry navy blue background represents our right to",
-    "thirdBulletPointBold": "take up space",
-    "thirdBulletPointAfterBold": "by not diminishing ourselves or limiting our dreams for the sake of societal approval.",
-    "fourthBulletPoint": "Each of the three white stars on opposing ends of the flag is a different size, symbolizing the fact that bodies of all shapes and sizes are equally worthy of love and respect and should be allowed to coexist and thrive in harmony with one another."
+    "coralDescription": "- chaleur, acceptation et inclusion",
+    "blueTitle": "BLEU",
+    "blueDescription": "- libération et détermination",
+    "brownTitle": "BRUN",
+    "brownDescriptionBeforeLink": "- reconnaissance des",
+    "brownDescriptionLinkText": "origines racistes de la grossophobie",
+    "brownDescriptionAfterLink": "et des efforts disproportionnés des femmes Noires pour la combattre.",
+    "thirdBulletPointBeforeBold": "Le fond bleu marine étoilé représente notre droit",
+    "thirdBulletPointBold": "d’occuper de l'espace",
+    "thirdBulletPointAfterBold": "ans nous rétrécir ni restreindre nos rêves au nom de l'approbation sociale.",
+    "fourthBulletPoint": "Chacune des trois étoiles blanches situées de chaque côté du drapeau est de taille différente, symbolisant le fait que tous les corps, quelle que soit leur grandeur ou morphologie, méritent de l’amour et du respect et devraient pouvoir coexister et s'épanouir en harmonie."
   }
 }
