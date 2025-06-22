@@ -88,6 +88,7 @@ function changeLanguage() {
           <v-btn
             variant="plain"
             color="#0550cf"
+            class="language-button"
             :ripple="false"
             @click="changeLanguage"
           >
@@ -129,5 +130,9 @@ function changeLanguage() {
 .navbar-stripes {
   height: 36px;
   opacity: 0.65;
+}
+
+.language-button {
+  opacity: 1 !important;
 }
 </style>
