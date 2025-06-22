@@ -4,6 +4,8 @@ import Mission from '../components/Mission.vue';
 import Design from '../components/Design.vue';
 import { useDisplay } from 'vuetify/framework';
 import { onBeforeUnmount, onMounted, ref } from 'vue';
+import Learning from '../components/Learning.vue';
+import AnimatedComponent from '../components/AnimatedComponent.vue';
 
 const display = useDisplay();
 const useFullSpace = ref(false);
@@ -15,6 +17,7 @@ onMounted(async () => {
 onBeforeUnmount(async () => {
   window.removeEventListener('resize', () => handleResize());
 });
+
 function handleResize() {
   useFullSpace.value = !display.smAndDown.value;
 }
@@ -29,23 +32,42 @@ function handleResize() {
   <v-spacer />
   <mission id="mission-block" />
   <v-spacer />
-  <v-row
-    no-gutters
-    class="center"
-  >
-    <v-col class="d-flex justify-center">
-      <span
-        class="design-block text-pre-wrap align-center"
-        :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
-      >
-        {{ $t('design.title') }}
-      </span></v-col
-    ></v-row
+  <animated-component>
+    <v-row
+      no-gutters
+      class="center"
+    >
+      <v-col class="d-flex justify-center">
+        <span
+          class="design-block text-pre-wrap align-center"
+          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+        >
+          {{ $t('design.title') }}
+        </span></v-col
+      ></v-row
+    ></animated-component
   >
   <design id="design-block" />
+  <v-spacer /><animated-component>
+    <v-row
+      no-gutters
+      class="center"
+    >
+      <v-col class="d-flex justify-center">
+        <span
+          class="design-block text-pre-wrap align-center"
+          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+        >
+          {{ $t('learning.title') }}
+        </span></v-col
+      ></v-row
+    ></animated-component
+  >
+  <learning id="learning-block" />
   <v-spacer />
 </template>
 
+<!--suppress CssUnusedSymbol -->
 <style scoped>
 .v-spacer {
   padding-bottom: 200px;

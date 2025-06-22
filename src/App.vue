@@ -74,7 +74,7 @@ function changeLanguage() {
           <span class="white-text pr-2">|</span>
           <a
             class="white-text pr-2"
-            href="#resources-block"
+            href="#learning-block"
           >
             {{ $t('app.navbarLinks.resources') }}
           </a>

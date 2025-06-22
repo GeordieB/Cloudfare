@@ -4,7 +4,7 @@
       "home": "home",
       "mission": "mission",
       "design": "design",
-      "resources": "ressources",
+      "resources": "apprendre",
       "downloads": "téléchargements"
     }
   },
@@ -51,5 +51,9 @@
     "thirdBulletPointBold": "d’occuper de l'espace",
     "thirdBulletPointAfterBold": "ans nous rétrécir ni restreindre nos rêves au nom de l'approbation sociale.",
     "fourthBulletPoint": "Chacune des trois étoiles blanches situées de chaque côté du drapeau est de taille différente, symbolisant le fait que tous les corps, quelle que soit leur grandeur ou morphologie, méritent de l’amour et du respect et devraient pouvoir coexister et s'épanouir en harmonie."
+  },
+  "learning": {
+    "title": "APPRENDRE",
+    "description": "some description in French"
   }
 }

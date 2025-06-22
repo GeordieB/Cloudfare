@@ -1,96 +1,102 @@
+<script setup lang="ts">
+import AnimatedComponent from './AnimatedComponent.vue';
+</script>
+
 <template>
-  <div class="design-div px-8 pt-8">
-    <p class="description mx-16">
-      {{ $t('design.description') }}
-    </p>
-    <br />
-    <div class="mx-16 ml-16 pl-16 pb-8">
-      <ul>
-        <li>
-          <p class="description mr-16">
-            {{ $t('design.firstBulletPoint') }}
-          </p>
-        </li>
-        <li>
-          <p class="description mr-16">
-            {{ $t('design.secondBulletPointBeforeLink') }}
-            <a
-              href="https://naafa.org/sizefreedom"
-              target="_blank"
-              >{{ $t('design.secondBulletPointLinkText') }}</a
-            >
-            {{ $t('design.secondBulletPointAfterLink') }}
-          </p>
-          <div class="mx-16 ml-16">
-            <br />
-            <ul>
-              <li>
-                <span class="description mr-16">
-                  <span class="description-yellow">
-                    {{ $t('design.yellowTitle') }}
+  <animated-component>
+    <div class="design-div px-8 pt-8">
+      <p class="description mx-16">
+        {{ $t('design.description') }}
+      </p>
+      <br />
+      <div class="mx-16 ml-16 pl-16 pb-8">
+        <ul>
+          <li>
+            <p class="description mr-16">
+              {{ $t('design.firstBulletPoint') }}
+            </p>
+          </li>
+          <li>
+            <p class="description mr-16">
+              {{ $t('design.secondBulletPointBeforeLink') }}
+              <a
+                href="https://naafa.org/sizefreedom"
+                target="_blank"
+                >{{ $t('design.secondBulletPointLinkText') }}</a
+              >
+              {{ $t('design.secondBulletPointAfterLink') }}
+            </p>
+            <div class="mx-16 ml-16">
+              <br />
+              <ul>
+                <li>
+                  <span class="description mr-16">
+                    <span class="description-yellow">
+                      {{ $t('design.yellowTitle') }}
+                    </span>
+                    {{ $t('design.yellowDescription') }}
                   </span>
-                  {{ $t('design.yellowDescription') }}
-                </span>
-              </li>
-              <li>
-                <span class="description mr-16">
-                  <span class="description-white">
-                    {{ $t('design.whiteTitle') }}
+                </li>
+                <li>
+                  <span class="description mr-16">
+                    <span class="description-white">
+                      {{ $t('design.whiteTitle') }}
+                    </span>
+                    {{ $t('design.whiteDescription') }}
                   </span>
-                  {{ $t('design.whiteDescription') }}
-                </span>
-              </li>
-              <li>
-                <span class="description mr-16">
-                  <span class="description-coral px-1">
-                    {{ $t('design.coralTitle') }}
+                </li>
+                <li>
+                  <span class="description mr-16">
+                    <span class="description-coral px-1">
+                      {{ $t('design.coralTitle') }}
+                    </span>
+                    {{ $t('design.coralDescription') }}
                   </span>
-                  {{ $t('design.coralDescription') }}
-                </span>
-              </li>
-              <li>
-                <span class="description mr-16">
-                  <span class="description-blue">
-                    {{ $t('design.blueTitle') }}
+                </li>
+                <li>
+                  <span class="description mr-16">
+                    <span class="description-blue">
+                      {{ $t('design.blueTitle') }}
+                    </span>
+                    {{ $t('design.blueDescription') }}
                   </span>
-                  {{ $t('design.blueDescription') }}
-                </span>
-              </li>
-              <li>
-                <span class="description mr-16">
-                  <span class="description-brown">
-                    {{ $t('design.brownTitle') }}
+                </li>
+                <li>
+                  <span class="description mr-16">
+                    <span class="description-brown">
+                      {{ $t('design.brownTitle') }}
+                    </span>
+                    {{ $t('design.brownDescriptionBeforeLink') }}
+                    <a
+                      href="https://www.npr.org/transcripts/893006538"
+                      target="_blank"
+                      >{{ $t('design.brownDescriptionLinkText') }}</a
+                    >
+                    {{ $t('design.brownDescriptionAfterLink') }}
                   </span>
-                  {{ $t('design.brownDescriptionBeforeLink') }}
-                  <a
-                    href="https://www.npr.org/transcripts/893006538"
-                    target="_blank"
-                    >{{ $t('design.brownDescriptionLinkText') }}</a
-                  >
-                  {{ $t('design.brownDescriptionAfterLink') }}
-                </span>
-              </li>
-            </ul>
-            <br />
-          </div>
-        </li>
-        <li>
-          <p class="description mr-16">
-            {{ $t('design.thirdBulletPointBeforeBold') }}
-            <span class="font-weight-bold">{{
-              $t('design.thirdBulletPointBold')
-            }}</span>
-            {{ $t('design.thirdBulletPointAfterBold') }}
-          </p>
-        </li>
-        <li>
-          <p class="description mr-16">
-            {{ $t('design.fourthBulletPoint') }}
-          </p>
-        </li>
-      </ul>
-    </div>
-  </div>
+                </li>
+              </ul>
+              <br />
+            </div>
+          </li>
+          <li>
+            <p class="description mr-16">
+              {{ $t('design.thirdBulletPointBeforeBold') }}
+              <span class="font-weight-bold">{{
+                $t('design.thirdBulletPointBold')
+              }}</span>
+              {{ $t('design.thirdBulletPointAfterBold') }}
+            </p>
+          </li>
+          <li>
+            <p class="description mr-16">
+              {{ $t('design.fourthBulletPoint') }}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div></animated-component
+  >
 </template>
 
 <style scoped>

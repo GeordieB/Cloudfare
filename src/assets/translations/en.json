@@ -4,7 +4,7 @@
       "home": "home",
       "mission": "mission",
       "design": "design",
-      "resources": "resources",
+      "resources": "learning",
       "downloads": "downloads"
     }
   },
@@ -49,5 +49,9 @@
     "thirdBulletPointBold": "take up space",
     "thirdBulletPointAfterBold": "by not diminishing ourselves or limiting our dreams for the sake of societal approval.",
     "fourthBulletPoint": "Each of the three white stars on opposing ends of the flag is a different size, symbolizing the fact that bodies of all shapes and sizes are equally worthy of love and respect and should be allowed to coexist and thrive in harmony with one another."
+  },
+  "learning": {
+    "title": "LEARNING",
+    "description": "some description"
   }
 }
