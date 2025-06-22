@@ -87,7 +87,7 @@ function changeLanguage() {
           </a>
           <v-btn
             variant="plain"
-            color="#FFF"
+            color="#0550cf"
             :ripple="false"
             @click="changeLanguage"
           >

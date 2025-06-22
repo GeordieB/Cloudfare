@@ -39,7 +39,7 @@ function handleResize() {
     >
       <v-col class="d-flex justify-center">
         <span
-          class="design-block text-pre-wrap align-center"
+          class="title text-pre-wrap align-center"
           :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
         >
           {{ $t('design.title') }}
@@ -55,7 +55,7 @@ function handleResize() {
     >
       <v-col class="d-flex justify-center">
         <span
-          class="design-block text-pre-wrap align-center"
+          class="title text-pre-wrap align-center"
           :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
         >
           {{ $t('learning.title') }}
@@ -73,13 +73,13 @@ function handleResize() {
   padding-bottom: 200px;
 }
 
-.design-block {
+.title {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal; /* Ensure no default italic is applied */
   transform: skewX(-10deg); /* Adjust the skew angle as needed */
   display: inline-flex;
-  text-shadow: 5px 5px 5px #0550cf;
+  text-shadow: 5px 5px #0550cf;
   height: 200px;
 }
 </style>

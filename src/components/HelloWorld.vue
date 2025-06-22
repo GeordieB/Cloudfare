@@ -49,8 +49,8 @@ function getText() {
     >
       <v-col class="d-flex justify-center">
         <span
-          class="take-up-space-block text-pre-wrap"
-          :style="{ 'font-size': useFullImg ? '60px' : '40px' }"
+          class="take-up-space-block text-pre-wrap mb-0"
+          :style="{ 'font-size': useFullImg ? '100px' : '45px' }"
         >
           {{ $t(getText()) }}
         </span></v-col
@@ -65,7 +65,7 @@ function getText() {
       <v-col class="d-flex justify-center"
         ><span
           class="take-up-space-block text-pre-wrap"
-          :style="{ 'font-size': useFullImg ? '60px' : '40px' }"
+          :style="{ 'font-size': useFullImg ? '100px' : '45px' }"
         >
           {{ $t('homePage.takeUpSpacePart2') }}
         </span></v-col
@@ -73,7 +73,7 @@ function getText() {
     ></animated-component
   >
   <animated-component>
-    <div class="card">
+    <div class="card pt-0">
       <a
         class="center"
         target="_blank"
@@ -101,10 +101,10 @@ function getText() {
 
 .take-up-space-block {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal; /* Ensure no default italic is applied */
   transform: skewX(-10deg); /* Adjust the skew angle as needed */
   display: inline-flex;
-  text-shadow: 5px 5px 5px #0550cf;
+  text-shadow: 5px 5px #0550cf;
 }
 </style>
