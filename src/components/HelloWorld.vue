@@ -3,7 +3,6 @@ import { useDisplay } from 'vuetify/framework';
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import i18n from '../plugins/i18n.ts';
 import AnimatedComponent from './AnimatedComponent.vue';
-import Mission from './Mission.vue';
 
 const display = useDisplay();
 const useFullImg = ref(false);
