@@ -21,7 +21,10 @@ function handleResize() {
 </script>
 
 <template>
-  <v-spacer style="padding-bottom: 100px" />
+  <v-spacer
+    id="home"
+    style="padding-bottom: 100px"
+  />
   <hello-world />
   <v-spacer />
   <mission id="mission-block" />

@@ -29,7 +29,6 @@ function getText() {
 
 <template>
   <v-row
-    id="home"
     no-gutters
     class="center"
   >
