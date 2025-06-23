@@ -41,7 +41,7 @@ import AnimatedComponent from './AnimatedComponent.vue';
       <v-row no-gutters
         ><v-col cols="4">
           <a
-            class="d-flex justify-center"
+            class="d-flex justify-end"
             target="_blank"
             href="https://naafa.org/"
           >
@@ -63,7 +63,7 @@ import AnimatedComponent from './AnimatedComponent.vue';
             /> </a></v-col
         ><v-col cols="4">
           <a
-            class="d-flex justify-center"
+            class="d-flex justify-start"
             target="_blank"
             href="https://grossophobie.ca/"
           >
@@ -102,8 +102,9 @@ h1 {
 }
 
 .naafa-img {
+  padding-top: 10px;
   height: auto;
-  width: 60%;
+  width: 55%;
 }
 
 .equilibre-img {
@@ -112,7 +113,8 @@ h1 {
 }
 
 .grossophobie-img {
+  padding-top: 12px;
   height: auto;
-  width: 60%;
+  width: 70%;
 }
 </style>
