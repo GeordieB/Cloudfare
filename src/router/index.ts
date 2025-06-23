@@ -1,10 +1,9 @@
 import HomePage from '../views/HomePage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import Mission from '../components/Mission.vue';
 
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/mission', component: Mission },
+  { path: '/:pathMatch(.*)*', redirect: '/' },
 ];
 
 const router = createRouter({

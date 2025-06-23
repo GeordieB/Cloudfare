@@ -29,11 +29,12 @@ function handleResize() {
     style="padding-bottom: 100px"
   />
   <hello-world />
-  <v-spacer />
-  <mission id="mission-block" />
+  <v-spacer id="mission-block" />
+  <mission />
   <v-spacer />
   <animated-component>
     <v-row
+      id="design-block"
       no-gutters
       class="center"
     >
@@ -47,9 +48,10 @@ function handleResize() {
       ></v-row
     ></animated-component
   >
-  <design id="design-block" />
+  <design />
   <v-spacer /><animated-component>
     <v-row
+      id="learning-block"
       no-gutters
       class="center"
     >
@@ -63,7 +65,7 @@ function handleResize() {
       ></v-row
     ></animated-component
   >
-  <learning id="learning-block" />
+  <learning />
   <v-spacer />
 </template>
 
