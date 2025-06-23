@@ -52,6 +52,10 @@
   },
   "learning": {
     "title": "LEARNING",
-    "description": "some description"
+    "header": "Unlearning anti-fat bias and weight stigma",
+    "firstParagraph": "Educating yourself about the harms of anti-fat bias is an important step toward change, allyship, and healing. There are many wonderful resources on the issue - articles, podcasts, social media accounts, books, etc. Rather than trying to assemble my own list, I think the offerings laid out in this document published in 2023 by the",
+    "firstParagraphLinkText": "Canadian Centre for Diversity and Inclusion (CCDI)",
+    "firstParagraphAfterLink": "are a good place to start:",
+    "secondParagraph": "These organizations are also great knowledge bases:"
   }
 }

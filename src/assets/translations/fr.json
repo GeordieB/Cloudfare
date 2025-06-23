@@ -53,7 +53,11 @@
     "fourthBulletPoint": "Chacune des trois étoiles blanches situées de chaque côté du drapeau est de taille différente, symbolisant le fait que tous les corps, quelle que soit leur grandeur ou morphologie, méritent de l’amour et du respect et devraient pouvoir coexister et s'épanouir en harmonie."
   },
   "learning": {
-    "title": "APPRENDRE",
-    "description": "some description in French"
+    "title": "LEARNING",
+    "header": "Unlearning anti-fat bias and weight stigma",
+    "firstParagraph": "Educating yourself about the harms of anti-fat bias is an important step toward change, allyship, and healing. There are many wonderful resources on the issue - articles, podcasts, social media accounts, books, etc. Rather than trying to assemble my own list, I think the offerings laid out in this document published in 2023 by the",
+    "firstParagraphLinkText": "Canadian Centre for Diversity and Inclusion (CCDI)",
+    "firstParagraphAfterLink": "are a good place to start:",
+    "secondParagraph": "These organizations are also great knowledge bases:"
   }
 }
