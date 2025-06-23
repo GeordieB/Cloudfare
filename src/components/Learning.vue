@@ -1,17 +1,39 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
+import { useDisplay } from 'vuetify/framework';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+const display = useDisplay();
+const useFullSpace = ref(false);
+onMounted(async () => {
+  window.addEventListener('resize', () => handleResize());
+  handleResize();
+});
+
+onBeforeUnmount(async () => {
+  window.removeEventListener('resize', () => handleResize());
+});
+
+function handleResize() {
+  useFullSpace.value = !display.smAndDown.value;
+}
 </script>
 
 <template>
   <animated-component
     ><div class="learning-div px-8">
-      <h1 class="pt-8 ml-16 font-weight-regular text-white">
+      <h1
+        class="pt-8 ml-16 font-weight-regular text-white d-flex justify-center"
+      >
         {{ $t('learning.header') }}
       </h1>
       <v-spacer class="py-2" />
       <v-row no-gutters
-        ><v-col cols="6">
-          <p class="description mx-16 text-white pb-8">
+        ><v-col
+          lg="4"
+          cols="9"
+          offset-lg="3"
+        >
+          <p class="description mx-16 text-white pb-8 pl-3">
             {{ $t('learning.firstParagraph') }}
             <a
               href="https://ccdi.ca/"
@@ -20,20 +42,28 @@ import AnimatedComponent from './AnimatedComponent.vue';
             >
             {{ $t('learning.firstParagraphAfterLink') }}
           </p> </v-col
-        ><v-col cols="6">
+        ><v-col
+          lg="4"
+          cols="3"
+        >
           <a
             target="_blank"
             href="https://ccdi.ca/media/4112/educational-resources-on-unlearning-fatphobia-en.pdf"
           >
             <img
               class="resource-img"
+              :width="useFullSpace ? '25%' : '100%'"
               src="../assets/resources.png"
               alt="Resources"
             /> </a></v-col
       ></v-row>
       <v-row no-gutters
-        ><v-col cols="12">
-          <p class="description mx-16 text-white pb-8">
+        ><v-col
+          cols="12"
+          lg="4"
+          offset-lg="3"
+        >
+          <p class="description mx-16 text-white pb-8 pl-3">
             {{ $t('learning.secondParagraph') }}
           </p></v-col
         ></v-row
@@ -98,7 +128,6 @@ h1 {
 
 .resource-img {
   height: auto;
-  width: 25%;
 }
 
 .naafa-img {

@@ -6,6 +6,7 @@ import { useDisplay } from 'vuetify/framework';
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import Learning from '../components/Learning.vue';
 import AnimatedComponent from '../components/AnimatedComponent.vue';
+import Downloads from '../components/Downloads.vue';
 
 const display = useDisplay();
 const useFullSpace = ref(false);
@@ -66,6 +67,23 @@ function handleResize() {
     ></animated-component
   >
   <learning />
+  <v-spacer /><animated-component>
+    <v-row
+      id="downloads-block"
+      no-gutters
+      class="center"
+    >
+      <v-col class="d-flex justify-center">
+        <span
+          class="title text-pre-wrap align-center"
+          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+        >
+          {{ $t('downloads.title') }}
+        </span></v-col
+      ></v-row
+    ></animated-component
+  >
+  <downloads />
   <v-spacer />
 </template>
 
