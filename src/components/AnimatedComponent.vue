@@ -5,6 +5,10 @@ withDefaults(defineProps<{ animationType?: string }>(), {
   animationType: 'fade',
 });
 
+defineSlots<{
+  default: void;
+}>();
+
 const target = ref<Element>();
 const animate = ref(false);
 
@@ -32,7 +36,7 @@ onMounted(() => {
         v-appear="animate"
         class="animated-component"
       >
-        <slot />
+        <slot name="default" />
       </div>
     </transition>
   </div>

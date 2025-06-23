@@ -24,7 +24,15 @@ export default [
   { ignores: ['**/dist'] },
   {
     languageOptions: {
-      globals: { window: true, document: true, navigator: true, console: true },
+      globals: {
+        window: true,
+        document: true,
+        navigator: true,
+        console: true,
+        Element: true,
+        HTMLElement: true,
+        IntersectionObserver: true,
+      },
     },
   },
   {
@@ -35,6 +43,7 @@ export default [
         'error',
         { allowShortCircuit: true, allowTernary: true },
       ],
+      'vue/require-toggle-inside-transition': 'off',
       'vue/multi-word-component-names': 'off',
       'vue/block-order': ['warn', { order: ['script', 'template', 'style'] }],
       'vue/component-api-style': ['error', ['script-setup', 'composition']],
