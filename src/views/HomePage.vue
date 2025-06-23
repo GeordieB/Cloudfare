@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue';
+import Flag from '../components/Flag.vue';
 import Mission from '../components/Mission.vue';
 import Design from '../components/Design.vue';
 import { useDisplay } from 'vuetify/framework';
@@ -28,7 +28,7 @@ function handleResize() {
     id="home"
     style="padding-bottom: 100px"
   />
-  <hello-world />
+  <flag />
   <v-spacer id="mission-block" />
   <mission />
   <v-spacer />
