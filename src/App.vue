@@ -81,6 +81,13 @@ function changeLanguage() {
           <span class="white-text pr-2">|</span>
           <a
             class="white-text pr-2"
+            href="#get-involved-block"
+          >
+            {{ $t('app.navbarLinks.getInvolved') }}
+          </a>
+          <span class="white-text pr-2">|</span>
+          <a
+            class="white-text pr-2"
             href="#downloads-block"
           >
             {{ $t('app.navbarLinks.downloads') }}

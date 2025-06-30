@@ -5,6 +5,7 @@
       "mission": "mission",
       "design": "design",
       "resources": "learning",
+      "getInvolved": "get involved",
       "downloads": "downloads"
     }
   },
@@ -58,8 +59,13 @@
     "firstParagraphAfterLink": "are a good place to start:",
     "secondParagraph": "These organizations are also great knowledge bases:"
   },
+  "getInvolved": {
+    "title": "GET INVOLVED",
+    "header": "How to get involved"
+  },
   "downloads": {
     "title": "DOWNLOADS",
+    "header": "DOWNLOADS",
     "description": "The flag is available in several formats and sizes. Please use it freely and widely, and share it with anyone who might find it useful.",
     "svgDownload": "Download SVG",
     "pngDownload": "Download PNG",

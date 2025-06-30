@@ -60,6 +60,16 @@ const emit = defineEmits<{ changeLanguage: [] }>();
         <v-list-item-title class="text-white"
           ><a
             class="text-white"
+            href="#get-involved-block"
+          >
+            {{ $t('app.navbarLinks.getInvolved') }}
+          </a></v-list-item-title
+        >
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-title class="text-white"
+          ><a
+            class="text-white"
             href="#downloads-block"
           >
             {{ $t('app.navbarLinks.downloads') }}

@@ -7,6 +7,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue';
 import Learning from '../components/Learning.vue';
 import AnimatedComponent from '../components/AnimatedComponent.vue';
 import Downloads from '../components/Downloads.vue';
+import GetInvolved from '../components/GetInvolved.vue';
 
 const display = useDisplay();
 const useFullSpace = ref(false);
@@ -67,6 +68,23 @@ function handleResize() {
     ></animated-component
   >
   <learning />
+  <v-spacer /><animated-component>
+    <v-row
+      id="get-involved-block"
+      no-gutters
+      class="center"
+    >
+      <v-col class="d-flex justify-center">
+        <span
+          class="title text-pre-wrap align-center"
+          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+        >
+          {{ $t('getInvolved.title') }}
+        </span></v-col
+      ></v-row
+    ></animated-component
+  >
+  <get-involved />
   <v-spacer /><animated-component>
     <v-row
       id="downloads-block"
