@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
+import KoFiButton from '@linusborg/vue-ko-fi-button';
 </script>
 
 <template>
@@ -8,20 +9,39 @@ import AnimatedComponent from './AnimatedComponent.vue';
       <iframe
         id="kofiframe"
         src="https://ko-fi.com/fatflag/?hidefeed=true&widget=true&embed=true&preview=true"
-        style="
-          border: none;
-          padding: 0px;
-          background: #f9f9f9;
-          border-radius: 25px;
-        "
+        style="border: none; border-radius: 25px"
         height="560"
         title="fatflag"
       ></iframe>
       <v-spacer class="py-2" /></div
   ></animated-component>
+  <ko-fi-button
+    class="sticky-ko-fi-button"
+    username="fatflag"
+    color="#ffca2e"
+    title="Donate"
+  />
 </template>
 
 <style scoped>
+.sticky-ko-fi-button {
+  position: fixed;
+  top: 90%;
+  right: 0;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+:deep(a.kofi-button) {
+  border-radius: 25px;
+  min-width: 100px;
+  color: black !important;
+}
+
+:deep(span.kofitext) {
+  color: black !important;
+}
+
 a {
   color: #ffca2e !important;
 }
