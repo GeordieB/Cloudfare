@@ -19,7 +19,7 @@ import KoFiButton from '@linusborg/vue-ko-fi-button';
     class="sticky-ko-fi-button"
     username="fatflag"
     color="#ffca2e"
-    title="Donate"
+    :title="$t('getInvolved.Donate')"
   />
 </template>
 
