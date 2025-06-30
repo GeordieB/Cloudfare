@@ -4,10 +4,19 @@ import AnimatedComponent from './AnimatedComponent.vue';
 
 <template>
   <animated-component
-    ><div class="get-involved-div px-8">
-      <h1 class="pt-8 ml-16 font-weight-regular text-white">
-        {{ $t('getInvolved.header') }}
-      </h1>
+    ><div class="get-involved-div px-8 pt-8">
+      <iframe
+        id="kofiframe"
+        src="https://ko-fi.com/fatflag/?hidefeed=true&widget=true&embed=true&preview=true"
+        style="
+          border: none;
+          padding: 0px;
+          background: #f9f9f9;
+          border-radius: 25px;
+        "
+        height="560"
+        title="fatflag"
+      ></iframe>
       <v-spacer class="py-2" /></div
   ></animated-component>
 </template>
@@ -25,6 +34,7 @@ h1 {
 .get-involved-div {
   color: #201c37;
   background-color: #4f372d;
+  justify-items: center;
 }
 
 .description {

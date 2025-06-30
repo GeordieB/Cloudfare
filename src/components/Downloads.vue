@@ -24,7 +24,7 @@ h1 {
 
 .downloads-div {
   color: #201c37;
-  background-color: #4f372d;
+  background-color: #201c37;
 }
 
 .description {
