@@ -14,15 +14,23 @@ function closeDonateButton() {
     ><div class="get-involved-div px-8 pt-8 text-white">
       <v-row no-gutters>
         <v-col
-          lg="4"
-          cols="12"
-          offset-lg="2"
+          cols="2"
+          class="d-flex justify-end align-center"
         >
-          <p class="description mx-16">
+          <img
+            src="../assets/bullhorn.png"
+            alt="bullhorn"
+            class="bullhorn"
+        /></v-col>
+        <v-col
+          lg="4"
+          cols="10"
+        >
+          <p class="description ml-16">
             {{ $t('getInvolved.firstParagraph') }}
           </p>
           <br />
-          <div class="mx-16 ml-16 pl-16 pb-8">
+          <div class="lml-16 pl-16 pb-8">
             <ul>
               <li>
                 <p class="description mr-16">
@@ -157,5 +165,10 @@ h1 {
 .description {
   font-size: 16px;
   font-weight: 300;
+}
+
+.bullhorn {
+  height: auto;
+  width: 80%;
 }
 </style>
