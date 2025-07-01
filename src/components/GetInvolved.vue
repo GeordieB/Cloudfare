@@ -129,13 +129,13 @@ function closeDonateButton() {
 <style scoped>
 .ko-fi-button {
   top: 90%;
-  right: 20px;
+  right: 25px;
   z-index: 1000;
   color: black !important;
 }
 .ko-fi-button-close {
   top: 90%;
-  right: 130px;
+  right: 0;
   z-index: 1000;
   position: fixed;
 }
