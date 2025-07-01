@@ -30,7 +30,7 @@ function closeDonateButton() {
             {{ $t('getInvolved.firstParagraph') }}
           </p>
           <br />
-          <div class="lml-16 pl-16 pb-8">
+          <div class="ml-16 pl-16 pb-8">
             <ul>
               <li>
                 <p class="description mr-16">
