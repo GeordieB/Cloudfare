@@ -7,8 +7,9 @@ import AnimatedComponent from './AnimatedComponent.vue';
     ><div class="get-involved-div px-8 pt-8 text-white">
       <v-row no-gutters>
         <v-col
-          cols="4"
-          offset="2"
+          lg="4"
+          cols="12"
+          offset-lg="2"
         >
           <p class="description mx-16">
             {{ $t('getInvolved.firstParagraph') }}
@@ -49,28 +50,40 @@ import AnimatedComponent from './AnimatedComponent.vue';
             </ul>
           </div>
         </v-col>
-        <v-col cols="6">
+        <v-col
+          lg="6"
+          cols="12"
+        >
           <v-row no-gutters
-            ><v-col cols="6">
+            ><v-col
+              lg="6"
+              cols="12"
+            >
               <p class="description mx-16">
                 {{ $t('getInvolved.secondParagraph') }}
               </p>
               <br />
-              <p class="description mx-16">
+              <p class="description mx-16 mb-16">
                 {{ $t('getInvolved.thirdParagraph') }}
                 <a href="#learning-block">{{
                   $t('getInvolved.thirdParagraphLink')
                 }}</a>
                 {{ $t('getInvolved.thirdParagraphAfterLink') }}
               </p></v-col
-            ><v-col cols="6">
-              <iframe
-                id="kofiframe"
-                src="https://ko-fi.com/fatflag/?hidefeed=true&widget=true&embed=true&preview=true"
-                style="border: none; border-radius: 25px"
-                height="560"
-                title="fatflag"
-              ></iframe></v-col></v-row></v-col
+            ><animated-component
+              ><v-col
+                lg="6"
+                cols="8"
+                offset-lg="0"
+                offset="4"
+              >
+                <iframe
+                  id="kofiframe"
+                  src="https://ko-fi.com/fatflag/?hidefeed=true&widget=true&embed=true&preview=true"
+                  style="border: none; border-radius: 25px"
+                  height="560"
+                  title="fatflag"
+                ></iframe></v-col></animated-component></v-row></v-col
       ></v-row>
       <v-spacer class="py-2" /></div
   ></animated-component>
