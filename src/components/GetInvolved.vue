@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
+import { ref } from 'vue';
+
+const showDonateButton = ref(true);
+
+function closeDonateButton() {
+  showDonateButton.value = false;
+}
 </script>
 
 <template>
@@ -67,8 +74,8 @@ import AnimatedComponent from './AnimatedComponent.vue';
                 {{ $t('getInvolved.thirdParagraph') }}
                 <a href="#learning-block">{{
                   $t('getInvolved.thirdParagraphLink')
-                }}</a>
-                {{ $t('getInvolved.thirdParagraphAfterLink') }}
+                }}</a
+                >{{ $t('getInvolved.thirdParagraphAfterLink') }}
               </p></v-col
             ><animated-component
               ><v-col
@@ -87,7 +94,17 @@ import AnimatedComponent from './AnimatedComponent.vue';
       ></v-row>
       <v-spacer class="py-2" /></div
   ></animated-component>
+
+  <v-icon
+    v-if="showDonateButton"
+    icon="close"
+    class="mr-2 ko-fi-button-close"
+    color="#ffca2e"
+    size="18"
+    @click="closeDonateButton"
+  />
   <v-btn
+    v-if="showDonateButton"
     href="https://ko-fi.com/fatflag"
     target="_blank"
     :text="$t('getInvolved.Donate')"
@@ -115,6 +132,12 @@ import AnimatedComponent from './AnimatedComponent.vue';
   right: 20px;
   z-index: 1000;
   color: black !important;
+}
+.ko-fi-button-close {
+  top: 90%;
+  right: 130px;
+  z-index: 1000;
+  position: fixed;
 }
 
 a {
