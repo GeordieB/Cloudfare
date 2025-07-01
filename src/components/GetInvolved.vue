@@ -36,26 +36,31 @@ function closeDonateButton() {
                 <p class="description mr-16">
                   {{ $t('getInvolved.firstBulletPoint') }}
                 </p>
+                <br />
               </li>
               <li>
                 <p class="description mr-16">
                   {{ $t('getInvolved.secondBulletPoint') }}
                 </p>
+                <br />
               </li>
               <li>
                 <p class="description mr-16">
                   {{ $t('getInvolved.thirdBulletPoint') }}
                 </p>
+                <br />
               </li>
               <li>
                 <p class="description mr-16">
                   {{ $t('getInvolved.fourthBulletPoint') }}
                 </p>
+                <br />
               </li>
               <li>
                 <p class="description mr-16">
                   {{ $t('getInvolved.fifthBulletPoint') }}
                 </p>
+                <br />
               </li>
               <li>
                 <p class="description mr-16">
