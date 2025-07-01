@@ -57,13 +57,11 @@ function handleResize() {
               alt="Resources"
             /> </a></v-col
       ></v-row>
+      <br />
+      <br />
       <v-row no-gutters
-        ><v-col
-          cols="12"
-          lg="4"
-          offset-lg="3"
-        >
-          <p class="description mx-16 text-white pb-8 pl-3">
+        ><v-col cols="12">
+          <p class="center description mx-16 text-white pb-8 pl-3">
             {{ $t('learning.secondParagraph') }}
           </p></v-col
         ></v-row
