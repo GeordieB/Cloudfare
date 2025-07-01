@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
-import KoFiButton from '@linusborg/vue-ko-fi-button';
 </script>
 
 <template>
@@ -15,30 +14,33 @@ import KoFiButton from '@linusborg/vue-ko-fi-button';
       ></iframe>
       <v-spacer class="py-2" /></div
   ></animated-component>
-  <ko-fi-button
-    class="sticky-ko-fi-button"
-    username="fatflag"
+  <v-btn
+    href="https://ko-fi.com/fatflag"
+    target="_blank"
+    :text="$t('getInvolved.Donate')"
+    class="ko-fi-button"
+    rounded
     color="#ffca2e"
-    :title="$t('getInvolved.Donate')"
-  />
+    slim
+    position="fixed"
+    tile
+  >
+    <template #prepend
+      ><div class="d-flex align-center">
+        <img
+          src="https://ko-fi.com/img/cuplogo.svg"
+          alt="ko-fi"
+          width="24"
+        /></div
+    ></template>
+  </v-btn>
 </template>
 
 <style scoped>
-.sticky-ko-fi-button {
-  position: fixed;
+.ko-fi-button {
   top: 90%;
-  right: 0;
+  right: 20px;
   z-index: 1000;
-  border-radius: 5px;
-}
-
-:deep(a.kofi-button) {
-  border-radius: 25px;
-  min-width: 100px;
-  color: black !important;
-}
-
-:deep(span.kofitext) {
   color: black !important;
 }
 
