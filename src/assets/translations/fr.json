@@ -63,8 +63,18 @@
   },
   "getInvolved": {
     "title": "S'IMPLIQUER",
-    "header": "How to get involved",
-    "Donate": "Faire un don"
+    "Donate": "Faire un don",
+    "firstParagraph": "Spreading the message behind the fat flag is a team effort. If you feel inspired, there are many ways to get involved:",
+    "firstBulletPoint": "Share the flag and/or this website on social media",
+    "secondBulletPoint": "Download the image files and get creative",
+    "thirdBulletPoint": "Make artwork incorporating the flag",
+    "fourthBulletPoint": "Start an urban flyer or sticker campaign",
+    "fifthBulletPoint": "Join your local fat social group and clue them in, or start one if your area doesn’t have one yet - community and solidarity are über important",
+    "sixthBulletPoint": "Write to your local government representative and rally to make size discrimination illegal",
+    "secondParagraph": "If you feel financially inspired, I’ve also set up a donation space. Every penny goes toward offsetting printing costs to make and distribute stickers and other flag-promoting materials. As I’m currently flying solo on this project, any contribution is immensely appreciated!",
+    "thirdParagraph": "(And of course, if you have the means, I encourage you to support the great organizations mentioned",
+    "thirdParagraphLink": "above",
+    "thirdParagraphAfterLink": ".)"
   },
   "downloads": {
     "title": "DOWNLOADS",
