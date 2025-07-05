@@ -2,27 +2,13 @@
 import Flag from '../components/Flag.vue';
 import Mission from '../components/Mission.vue';
 import Design from '../components/Design.vue';
-import { useDisplay } from 'vuetify/framework';
-import { onBeforeUnmount, onMounted, ref } from 'vue';
 import Learning from '../components/Learning.vue';
 import AnimatedComponent from '../components/AnimatedComponent.vue';
 import Downloads from '../components/Downloads.vue';
 import GetInvolved from '../components/GetInvolved.vue';
+import { useDisplayPort } from '../composables/useDisplayPort.ts';
 
-const display = useDisplay();
-const useFullSpace = ref(false);
-onMounted(async () => {
-  window.addEventListener('resize', () => handleResize());
-  handleResize();
-});
-
-onBeforeUnmount(async () => {
-  window.removeEventListener('resize', () => handleResize());
-});
-
-function handleResize() {
-  useFullSpace.value = !display.smAndDown.value;
-}
+const { mdAndUp } = useDisplayPort();
 </script>
 
 <template>
@@ -43,7 +29,7 @@ function handleResize() {
       <v-col class="d-flex justify-center">
         <span
           class="title text-pre-wrap align-center"
-          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+          :style="{ 'font-size': mdAndUp ? '60px' : '40px' }"
         >
           {{ $t('design.title') }}
         </span></v-col
@@ -60,7 +46,7 @@ function handleResize() {
       <v-col class="d-flex justify-center">
         <span
           class="title text-pre-wrap align-center"
-          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+          :style="{ 'font-size': mdAndUp ? '60px' : '40px' }"
         >
           {{ $t('learning.title') }}
         </span></v-col
@@ -77,7 +63,7 @@ function handleResize() {
       <v-col class="d-flex justify-center">
         <span
           class="title text-pre-wrap align-center"
-          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+          :style="{ 'font-size': mdAndUp ? '60px' : '40px' }"
         >
           {{ $t('getInvolved.title') }}
         </span></v-col
@@ -94,7 +80,7 @@ function handleResize() {
       <v-col class="d-flex justify-center">
         <span
           class="title text-pre-wrap align-center"
-          :style="{ 'font-size': useFullSpace ? '60px' : '40px' }"
+          :style="{ 'font-size': mdAndUp ? '60px' : '40px' }"
         >
           {{ $t('downloads.title') }}
         </span></v-col

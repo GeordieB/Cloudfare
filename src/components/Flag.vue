@@ -1,28 +1,15 @@
 <script setup lang="ts">
-import { useDisplay } from 'vuetify/framework';
-import { onBeforeUnmount, onMounted, ref } from 'vue';
 import i18n from '../plugins/i18n.ts';
 import AnimatedComponent from './AnimatedComponent.vue';
+import { useDisplayPort } from '../composables/useDisplayPort.ts';
 
-const display = useDisplay();
-const useFullImg = ref(false);
-onMounted(async () => {
-  window.addEventListener('resize', () => handleResize());
-  handleResize();
-});
-
-onBeforeUnmount(async () => {
-  window.removeEventListener('resize', () => handleResize());
-});
-function handleResize() {
-  useFullImg.value = !display.smAndDown.value;
-}
+const { mdAndUp } = useDisplayPort();
 
 function getText() {
   if (i18n.global.locale === 'en') {
     return 'homePage.takeUpSpace';
   }
-  return useFullImg.value
+  return mdAndUp.value
     ? 'homePage.takeUpSpaceFull'
     : 'homePage.takeUpSpacePart1';
 }
@@ -36,7 +23,7 @@ function getText() {
     >
       <p
         class="dare-block"
-        :style="{ 'font-size': useFullImg ? '40px' : '30px' }"
+        :style="{ 'font-size': mdAndUp ? '40px' : '30px' }"
       >
         {{ $t('homePage.dare') }}
       </p></v-row
@@ -49,7 +36,7 @@ function getText() {
       <v-col class="d-flex justify-center">
         <span
           class="take-up-space-block text-pre-wrap mb-0"
-          :style="{ 'font-size': useFullImg ? '100px' : '45px' }"
+          :style="{ 'font-size': mdAndUp ? '100px' : '45px' }"
         >
           {{ $t(getText()) }}
         </span></v-col
@@ -57,14 +44,14 @@ function getText() {
     ></animated-component
   ><animated-component>
     <v-row
-      v-if="i18n.global.locale === 'fr' && !useFullImg"
+      v-if="i18n.global.locale === 'fr' && !mdAndUp"
       no-gutters
       class="center"
     >
       <v-col class="d-flex justify-center"
         ><span
           class="take-up-space-block text-pre-wrap"
-          :style="{ 'font-size': useFullImg ? '100px' : '45px' }"
+          :style="{ 'font-size': mdAndUp ? '100px' : '45px' }"
         >
           {{ $t('homePage.takeUpSpacePart2') }}
         </span></v-col
@@ -79,7 +66,7 @@ function getText() {
       >
         <img
           class="flag"
-          :width="useFullImg ? '50%' : '80%'"
+          :width="mdAndUp ? '50%' : '80%'"
           src="../assets/flag.png"
           alt="Fat Flag"
         />

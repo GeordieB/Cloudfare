@@ -1,21 +1,8 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
-import { useDisplay } from 'vuetify/framework';
-import { onBeforeUnmount, onMounted, ref } from 'vue';
-const display = useDisplay();
-const useFullSpace = ref(false);
-onMounted(async () => {
-  window.addEventListener('resize', () => handleResize());
-  handleResize();
-});
+import { useDisplayPort } from '../composables/useDisplayPort.ts';
 
-onBeforeUnmount(async () => {
-  window.removeEventListener('resize', () => handleResize());
-});
-
-function handleResize() {
-  useFullSpace.value = !display.smAndDown.value;
-}
+const { mdAndUp } = useDisplayPort();
 </script>
 
 <template>
@@ -52,7 +39,7 @@ function handleResize() {
           >
             <img
               class="resource-img"
-              :width="useFullSpace ? '25%' : '100%'"
+              :width="mdAndUp ? '25%' : '100%'"
               src="../assets/resources.png"
               alt="Resources"
             /> </a></v-col

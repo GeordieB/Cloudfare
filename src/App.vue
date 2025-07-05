@@ -1,26 +1,12 @@
 <script setup lang="ts">
 import i18n from './plugins/i18n.ts';
-import { useDisplay } from 'vuetify';
-import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import MoreMenu from './components/MoreMenu.vue';
+import { useDisplayPort } from './composables/useDisplayPort.ts';
 
 const currentLanguage = ref('en');
 
-const display = useDisplay();
-const useFullMenu = ref(false);
-const justifyNavStart = ref(false);
-onMounted(async () => {
-  window.addEventListener('resize', () => handleResize());
-  handleResize();
-});
-
-onBeforeUnmount(async () => {
-  window.removeEventListener('resize', () => handleResize());
-});
-function handleResize() {
-  useFullMenu.value = !display.smAndDown.value;
-  justifyNavStart.value = display.xs.value;
-}
+const { mdAndUp } = useDisplayPort();
 
 function changeLanguage() {
   if (currentLanguage.value === 'en') {
@@ -38,13 +24,13 @@ function changeLanguage() {
     <v-row no-gutters>
       <v-col class="d-flex">
         <img
-          :width="useFullMenu ? '' : '300px'"
+          :width="mdAndUp ? '' : '300px'"
           class="navbar-stripes justify-start"
           src="./assets/navbar-stripes.png"
           alt="stripes logo"
       /></v-col>
       <v-col
-        v-if="useFullMenu"
+        v-if="mdAndUp"
         class="d-flex justify-end"
       >
         <nav>
