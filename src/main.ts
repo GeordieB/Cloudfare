@@ -38,8 +38,14 @@ export const appear: Directive = {
 };
 
 // Access the secret from the environment
-// eslint-disable-next-line no-undef
-fetch('/api/').then((res) => res.json() as Promise<{ name: string }>);
+
+try {
+  // eslint-disable-next-line no-undef
+  fetch('/api/').then((res) => res.json() as Promise<{ name: string }>);
+} catch (error) {
+  // eslint-disable-next-line no-console
+  console.log(error);
+}
 // const GA_TAG_ID = await response.
 //
 // if (!GA_TAG_ID) {
