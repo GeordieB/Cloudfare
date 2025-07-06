@@ -2,10 +2,10 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.node.json" },
   ],
   "compilerOptions": {
-    "types": ["vuetify", "@cloudflare/workers-types"],
+    "types": [ "vuetify", "@cloudflare/workers-types"],
     "lib": ["DOM", "ESNext"],
   }
 }

@@ -10,7 +10,7 @@ import router from './router';
 import i18n from './plugins/i18n.ts';
 import vuetify from './plugins/vuetify.ts';
 import { createGtag } from 'vue-gtag';
-import { fetch } from './services/fetch.ts';
+import { fetch } from './services';
 
 export const appear: Directive = {
   beforeMount(element: HTMLElement) {
@@ -39,7 +39,7 @@ export const appear: Directive = {
 };
 
 // Access the secret from the environment
-const response = await fetch({}, {});
+const response = await fetch('/api/', {});
 const GA_TAG_ID = await response.text();
 
 if (!GA_TAG_ID) {

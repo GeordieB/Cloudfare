@@ -21,7 +21,7 @@ export default [
       ],
     },
   },
-  { ignores: ['**/dist', 'src/services/fetch.ts'] },
+  { ignores: ['**/dist', 'src/services/index.ts'] },
   {
     languageOptions: {
       globals: {
