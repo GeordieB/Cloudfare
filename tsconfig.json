@@ -6,6 +6,7 @@
   ],
   "compilerOptions": {
     "types": ["vuetify"],
-    "lib": ["DOM", "ESNext"]
+    "lib": ["DOM", "ESNext"],
+    "types": ["@cloudflare/workers-types"]
   }
 }
