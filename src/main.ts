@@ -10,7 +10,6 @@ import router from './router';
 import i18n from './plugins/i18n.ts';
 import vuetify from './plugins/vuetify.ts';
 import { createGtag } from 'vue-gtag';
-import { fetch } from './services';
 
 export const appear: Directive = {
   beforeMount(element: HTMLElement) {
@@ -39,16 +38,17 @@ export const appear: Directive = {
 };
 
 // Access the secret from the environment
-const response = await fetch('/api/', {});
-const GA_TAG_ID = await response.text();
-
-if (!GA_TAG_ID) {
-  // eslint-disable-next-line no-console
-  console.error('GA_TAG_ID is not defined in the environment.');
-}
+// eslint-disable-next-line no-undef
+fetch('/api/').then((res) => res.json() as Promise<{ name: string }>);
+// const GA_TAG_ID = await response.
+//
+// if (!GA_TAG_ID) {
+//   // eslint-disable-next-line no-console
+//   console.error('GA_TAG_ID is not defined in the environment.');
+// }
 
 const gtag = createGtag({
-  tagId: GA_TAG_ID || '',
+  tagId: /*GA_TAG_ID || */ '',
 });
 
 createApp(App)
