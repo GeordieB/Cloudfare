@@ -76,10 +76,8 @@
   },
   "downloads": {
     "title": "DOWNLOADS",
-    "header": "DOWNLOADS",
-    "description": "The flag is available in several formats and sizes. Please use it freely and widely, and share it with anyone who might find it useful.",
-    "svgDownload": "Download SVG",
-    "pngDownload": "Download PNG",
-    "pdfDownload": "Download PDF"
+    "jpgDownload": ".jpg",
+    "svgDownload": ".svg",
+    "pdfDownload": "Graphic Standards"
   }
 }
