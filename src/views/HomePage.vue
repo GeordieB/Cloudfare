@@ -4,6 +4,7 @@ import Mission from '../components/Mission.vue';
 import Design from '../components/Design.vue';
 import Learning from '../components/Learning.vue';
 import AnimatedComponent from '../components/AnimatedComponent.vue';
+import Downloads from '../components/Downloads.vue';
 import GetInvolved from '../components/GetInvolved.vue';
 import { useDisplayPort } from '../composables/useDisplayPort.ts';
 
@@ -86,6 +87,7 @@ const { mdAndUp } = useDisplayPort();
       ></v-row
     ></animated-component
   >
+  <downloads />
   <v-spacer />
 </template>
 

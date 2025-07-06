@@ -12,7 +12,7 @@ const { mdAndUp } = useDisplayPort();
         ><v-col cols="4"
           ><a
             download
-            href="../../public/fat-flag.jpg"
+            href="fat-flag.jpg"
             ><img
               :class="mdAndUp ? 'desktop-img' : 'mobile-img'"
               src="../../public/flag_download_button.png"
@@ -22,7 +22,7 @@ const { mdAndUp } = useDisplayPort();
           class="d-flex justify-center"
           ><a
             download
-            href="../../public/fat-flag-vector.svg"
+            href="fat-flag-vector.svg"
             ><img
               :class="mdAndUp ? 'desktop-img' : 'mobile-img'"
               src="../../public/flag_download_button.png"
@@ -32,7 +32,7 @@ const { mdAndUp } = useDisplayPort();
           class="d-flex justify-center"
           ><a
             download
-            href="https://drive.google.com/file/d/1pG4Xd-5Ksg7cCqsBByPsWyspP1wMhGyR/view?usp=drive_link"
+            href="fat-flag-graphic-standards.pdf"
             target="_blank"
             ><img
               :class="mdAndUp ? 'desktop-img' : 'mobile-img'"
