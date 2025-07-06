@@ -9,6 +9,8 @@ import App from './App.vue';
 import router from './router';
 import i18n from './plugins/i18n.ts';
 import vuetify from './plugins/vuetify.ts';
+import { createGtag } from 'vue-gtag';
+
 export const appear: Directive = {
   beforeMount(element: HTMLElement) {
     element.style.visibility = 'hidden';
@@ -34,9 +36,23 @@ export const appear: Directive = {
     node.transition.enter(element);
   },
 };
+
+// Access the secret from the environment
+const GA_TAG_ID = import.meta.env.GA_TAG_ID;
+
+if (!GA_TAG_ID) {
+  // eslint-disable-next-line no-console
+  console.error('GA_TAG_ID is not defined in the environment.');
+}
+
+const gtag = createGtag({
+  tagId: GA_TAG_ID || '',
+});
+
 createApp(App)
   .use(router)
   .use(i18n)
   .use(vuetify)
   .directive('appear', appear)
+  .use(gtag)
   .mount('#app');
