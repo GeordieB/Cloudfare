@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
+import { useDisplayPort } from '../composables/useDisplayPort.ts';
+const { mdAndUp } = useDisplayPort();
 </script>
 
 <template>
@@ -8,12 +10,15 @@ import AnimatedComponent from './AnimatedComponent.vue';
       <v-row no-gutters
         ><v-col
           cols="2"
-          class="d-flex justify-end align-center"
+          class="d-flex align-center"
+          :class="mdAndUp ? 'justify-end' : ''"
         >
           <img
             src="../assets/fist_logo.png"
             alt="fist-logo"
-            class="fist-logo" /></v-col
+            :class="
+              mdAndUp ? 'fist-logo-desktop' : 'fist-logo-mobile'
+            " /></v-col
         ><v-col>
           <h1 class="pt-8 ml-16 font-weight-regular">
             {{ $t('mission.whatSection.title') }}
@@ -63,8 +68,13 @@ a {
   color: #0550cf;
 }
 
-.fist-logo {
+.fist-logo-desktop {
   height: auto;
   width: 90%;
+}
+
+.fist-logo-mobile {
+  height: auto;
+  width: 170%;
 }
 </style>

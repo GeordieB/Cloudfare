@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import AnimatedComponent from './AnimatedComponent.vue';
 import { ref } from 'vue';
+import { useDisplayPort } from '../composables/useDisplayPort.ts';
+const { mdAndUp } = useDisplayPort();
 
 const showDonateButton = ref(true);
 
@@ -15,12 +17,13 @@ function closeDonateButton() {
       <v-row no-gutters>
         <v-col
           cols="2"
-          class="d-flex justify-end align-center"
+          class="d-flex align-center"
+          :class="mdAndUp ? 'justify-end' : ''"
         >
           <img
             src="../assets/bullhorn.png"
             alt="bullhorn"
-            class="bullhorn"
+            :class="mdAndUp ? 'bullhorn-desktop' : 'bullhorn-mobile'"
         /></v-col>
         <v-col
           lg="4"
@@ -172,8 +175,13 @@ h1 {
   font-weight: 300;
 }
 
-.bullhorn {
+.bullhorn-desktop {
   height: auto;
   width: 80%;
+}
+
+.bullhorn-mobile {
+  height: auto;
+  width: 200%;
 }
 </style>
