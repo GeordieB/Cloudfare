@@ -10,7 +10,7 @@ import router from './router';
 import i18n from './plugins/i18n.ts';
 import vuetify from './plugins/vuetify.ts';
 import { createGtag } from 'vue-gtag';
-import type { Env } from './types/CloudflareTypes.ts';
+import { fetch } from './services/fetch.ts';
 
 export const appear: Directive = {
   beforeMount(element: HTMLElement) {
@@ -37,9 +37,10 @@ export const appear: Directive = {
     node.transition.enter(element);
   },
 };
-const env = {} as Env;
+
 // Access the secret from the environment
-const GA_TAG_ID = env.GA_TAG_ID;
+const response = await fetch({}, {});
+const GA_TAG_ID = await response.text();
 
 if (!GA_TAG_ID) {
   // eslint-disable-next-line no-console

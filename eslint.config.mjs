@@ -21,7 +21,7 @@ export default [
       ],
     },
   },
-  { ignores: ['**/dist'] },
+  { ignores: ['**/dist', 'src/services/fetch.ts'] },
   {
     languageOptions: {
       globals: {
@@ -32,6 +32,8 @@ export default [
         Element: true,
         HTMLElement: true,
         IntersectionObserver: true,
+        Request: true,
+        Response: true,
       },
     },
   },
