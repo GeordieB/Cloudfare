@@ -48,7 +48,7 @@ const { mdAndUp } = useDisplayPort();
             $t('downloads.svgDownload')
           }}</span></v-col
         ><v-col cols="4"
-          ><span class="d-flex justify-center">{{
+          ><span class="d-flex justify-center text-no-wrap">{{
             $t('downloads.pdfDownload')
           }}</span></v-col
         ></v-row
