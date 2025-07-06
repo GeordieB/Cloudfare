@@ -87,7 +87,6 @@ const { mdAndUp } = useDisplayPort();
       ></v-row
     ></animated-component
   >
-  <downloads />
   <v-spacer />
 </template>
 

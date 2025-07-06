@@ -32,7 +32,8 @@ const { mdAndUp } = useDisplayPort();
           class="d-flex justify-center"
           ><a
             download
-            href="../../public/fat-flag-graphic-standards.pdf"
+            href="https://drive.google.com/file/d/1pG4Xd-5Ksg7cCqsBByPsWyspP1wMhGyR/view?usp=drive_link"
+            target="_blank"
             ><img
               :class="mdAndUp ? 'desktop-img' : 'mobile-img'"
               src="../assets/standards_download_button.png"
