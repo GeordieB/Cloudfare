@@ -5,8 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "types": ["vuetify"],
+    "types": ["vuetify", "@cloudflare/workers-types"],
     "lib": ["DOM", "ESNext"],
-    "types": ["@cloudflare/workers-types"]
   }
 }
