@@ -9,6 +9,7 @@ import App from './App.vue';
 import router from './router';
 import i18n from './plugins/i18n.ts';
 import vuetify from './plugins/vuetify.ts';
+import { createGtag } from 'vue-gtag';
 
 export const appear: Directive = {
   beforeMount(element: HTMLElement) {
@@ -36,9 +37,14 @@ export const appear: Directive = {
   },
 };
 
+const gtag = createGtag({
+  tagId: 'G-MH4XDCPN32',
+});
+
 createApp(App)
   .use(router)
   .use(i18n)
   .use(vuetify)
   .directive('appear', appear)
+  .use(gtag)
   .mount('#app');
